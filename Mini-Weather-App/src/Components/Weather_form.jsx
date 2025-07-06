@@ -2,17 +2,18 @@ import '@fontsource/roboto/700.css';
 import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
+import "./Weather_form.css";
 
 export default function Weather({UpdateInfo}){
     let url="https://api.openweathermap.org/data/2.5/weather?appid=c1c7c44f70877aed6bd93fcc444b1e43&units=metric&q=";
     let [city,setCity]=useState("");
     let [weather,setWeather]=useState({
-        temperature:"",
-        description:"",
-        windspeed:"",
-        humidity:"",
-        pressure:"",
-        city:"",
+        temperature:"27.36",
+        description:"overcast clouds",
+        windspeed:"10.27",
+        humidity:"85",
+        pressure:"1003",
+        city:"mumbai",
     })
 
     async function GenerateWaether(){
@@ -46,8 +47,21 @@ export default function Weather({UpdateInfo}){
 
     return(
         <form onSubmit={ChangeWeather}>
-            <TextField id="CityName" label="City Name" variant="outlined"  value={city} onChange={Handler}/>
-            <button type="submit"><SearchIcon forhtml="CityName"/></button>
+            <TextField
+                id="CityName" 
+                label="City Name" 
+                variant="outlined"  
+                value={city} 
+                onChange={Handler}
+                InputProps={{
+                    sx: {
+                        borderRadius: '27px',
+                        marginRight:'10px',
+                        marginBottom:'5px',
+                        width:'300px'
+                    },
+            }} />
+            <button type="submit" className="search"><SearchIcon forhtml="CityName"/></button>
         </form>
     )
 }

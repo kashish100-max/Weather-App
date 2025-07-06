@@ -1,0 +1,7 @@
+.display_box{
+    height:max-content;
+    width: max-content;
+    border: 2px solid black;
+    border-radius: 17px;
+    padding:14px;
+}
