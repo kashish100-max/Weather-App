@@ -27,15 +27,15 @@ A simple  weather app that allows users to check real-time weather conditions of
 
 ## 🖼️ Screenshots
 
-| Main View                                             | Error Message                                          |
-|------------------------------------------------------ |--------------------------------------------------------|
-| ![Main View]                                          | ![Error]                                               |
-| (../Mini-Weather-App/Screenshots/Screenshot (115).png)| (../Mini-Weather-App/Screenshots/Screenshot (116).png) |
-| (../Mini-Weather-App/Screenshots/Screenshot (118).png)| (../Mini-Weather-App/Screenshots/Screenshot (117).png) |
-| (../Mini-Weather-App/Screenshots/Screenshot (119).png)|                                                        |
-| (../Mini-Weather-App/Screenshots/Screenshot (120).png)|                                                        |
-| (../Mini-Weather-App/Screenshots/Screenshot (121).png)|                                                        |
-| (../Mini-Weather-App/Screenshots/Screenshot (122).png)|                                                        |
+| Main View                                   | Error Message                                |
+|---------------------------------------------|----------------------------------------------|
+| ![Main View]                                | ![Error]                                     |
+| (../Mini-Weather-App/Screenshots/image1.png)| (../Mini-Weather-App/Screenshots/image2.png) |
+| (../Mini-Weather-App/Screenshots/image4.png)| (../Mini-Weather-App/Screenshots/image3.png) |
+| (../Mini-Weather-App/Screenshots/image5.png)|                                              |
+| (../Mini-Weather-App/Screenshots/image6.png)|                                              |
+| (../Mini-Weather-App/Screenshots/image7.png)|                                              |
+| (../Mini-Weather-App/Screenshots/image8.png)|                                              |
 
 ---
 
