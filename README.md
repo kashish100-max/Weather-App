@@ -42,20 +42,21 @@ A simple  weather app that allows users to check real-time weather conditions of
 ## 📁 Folder Structure (Simplified)
 /Weather-App
 |----(Mini-Weather-App)
-|----README.md   |---node modules
-                 |---public
-                 |---Screenshots
-                 |----------------src
-                 |---index.html    |----------Components
-                                   |---App.css       |---Background.js
-                                   |---App.jsx       |---Weather_data.css
-                                   |---index.css     |---Weather_data.jsx
-                                   |---main.jsx      |---Weather_form.css
-                                                     |---Weather_form.jsx
-                                                     |---Weather.css
-                                                     |---Weather.jsx
+|----README.md        |---node modules
+|---Package-lock.json |---public
+|                     |---Screenshots
+|                     |---Demo_video
+|                     |------------------src
+|                     |---index.html     |----------Components
+|                     |                  |---App.css        |---Background.js
+|                     |                  |---App.jsx        |---Weather_data.css
+|                     |                  |---index.css      |---Weather_data.jsx
+|                     |                  |---main.jsx       |---Weather_form.css
+|                     |                  |                  |---Weather_form.jsx
+|                     |                  |                  |---Weather.css
+|                     |                  |                  |---Weather.jsx
 
 # 🔗 Live Demo
-<video controls src="Vite + React - Google Chrome 2025-07-08 01-17-51.mp4" title="DEMO"></video>
+🎥 (../Mini-Weather-App/Demo/Demo.mp4)
 
-Made with 💙 by Kashish Sharma
+## 🙌 Made with 💙 by Kashish Sharma
