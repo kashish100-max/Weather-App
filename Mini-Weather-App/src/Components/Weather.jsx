@@ -1,7 +1,8 @@
 import Weather_form from "./Weather_form.jsx";
 import Weather_data from "./Weather_data.jsx"
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import "./Weather.css";
+import { getBackgroundColor } from "./Background.js";
 
 export default function Weather(){
     let [weather,setWeather]=useState({
@@ -17,10 +18,12 @@ export default function Weather(){
         setWeather(data);
     }
 
+    const bgColor=useMemo(()=>getBackgroundColor(weather.temperature),[weather.temperature]);
     return(
         <div>
-            <h1>Weather App</h1>
-            <div className="display_box">
+  
+            <h1 className="heading">Weather App</h1>
+            <div className="display_box" style={{background:bgColor}}>
                 <Weather_form UpdateInfo={UpdateInfo}/>
                 <Weather_data weather={weather}/>
             </div>

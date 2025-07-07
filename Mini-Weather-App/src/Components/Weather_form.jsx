@@ -7,6 +7,7 @@ import "./Weather_form.css";
 export default function Weather({UpdateInfo}){
     let url="https://api.openweathermap.org/data/2.5/weather?appid=c1c7c44f70877aed6bd93fcc444b1e43&units=metric&q=";
     let [city,setCity]=useState("");
+    let [error,setError]=useState(false);
     let [weather,setWeather]=useState({
         temperature:"27.36",
         description:"overcast clouds",
@@ -17,11 +18,16 @@ export default function Weather({UpdateInfo}){
     })
 
     async function GenerateWaether(){
-        let res=await fetch(url+city);
+        try{
+            let res=await fetch(url+city);
         let data=await res.json();
+        if(data.cod==404){
+            setError(true);
+        }
+        setError(false);
         setWeather(weather=
                 {...weather,
-                    temperature:data.main.temp,
+                    temperature:data.main.feels_like,
                     humidity:data.main.humidity,
                     windspeed:data.wind.speed,
                     city:city,
@@ -31,6 +37,11 @@ export default function Weather({UpdateInfo}){
             )
         console.log(weather);
         return weather;
+        } catch(error){
+            console.log("wrong city name "+error);
+            setError(true);
+            return weather;
+    }
     }
 
     async function ChangeWeather(event){
@@ -58,10 +69,15 @@ export default function Weather({UpdateInfo}){
                         borderRadius: '27px',
                         marginRight:'10px',
                         marginBottom:'5px',
-                        width:'300px'
+                        width:'300px',
+                        borderColor:"black"
                     },
             }} />
+
             <button type="submit" className="search"><SearchIcon forhtml="CityName"/></button>
+            {error && 
+                   <p style={{ color: "red" , fontWeight:"500"}}>Please enter correct city name</p>
+           }
         </form>
     )
 }

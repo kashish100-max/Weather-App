@@ -38,10 +38,10 @@ export default function Weather_data({weather}){
               }}/>
             }
             {(weather.temperature <=40 && weather.temperature>30) && 
-              <i class="fa-solid fa-cloud-sun" className='icon'></i>
+              <i className="fa-solid fa-cloud-sun icon"></i>
             }
             {weather.temperature >40 && 
-              <i class="fa-solid fa-temperature-high" className="icon"></i>
+              <i className="fa-solid fa-temperature-high icon" ></i>
             }
             
             <h1>{weather.temperature}&deg;C</h1>
