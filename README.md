@@ -56,7 +56,7 @@ A simple  weather app that allows users to check real-time weather conditions of
 |                     |                  |                  |---Weather.css
 |                     |                  |                  |---Weather.jsx
 
-# 🔗 Live Demo
-🎥 (../Mini-Weather-App/Demo/Demo.mp4)
+# 🎥  Demo Video
+(../Mini-Weather-App/Demo/Demo.mp4)
 
 ## 🙌 Made with 💙 by Kashish Sharma
